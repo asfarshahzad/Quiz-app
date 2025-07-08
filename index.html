@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="landing-page" id="sectionFirst">
+        <header>
+            <div class="logo"><span class="first-letter">Q</span>uiz <span class="app">App</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="content-wrapper">
+                <h1>Welcome to Quiz App, your go-to platform for fun, interactive, and challenging quizzes!</h1>
+                <p>
+                    Boost your knowledge, challenge your mind, and have fun all at once! Our quiz app is designed to be
+                    engaging,
+                    easy to use, and packed with features to keep you coming back. Take the first step to becoming a
+                    trivia
+                    champion. Join thousands of players already loving Quiz App!
+                </p>
+                <button id="getStartedBtn">Get Started</button>
+            </div>
+            <div class="img-box">
+                <img src="./images/quiz-time.png" alt="">
+            </div>
+        </div>
+        <!-- Loader -->
+        <div class="loader-overlay" id="loader">
+            <div class="loader"></div>
+        </div>
+    </div>
+
+    <div class="container-2" id="sectionSecond">
+        <div class="quiz-container">
+            <div class="timer">
+                <h2 class="quiz">JS Quiz 1</h2>
+                <p class="time" id="time">Time Left <span class="mints" id="mints">2 Mints</span></p>
+            </div>
+            <div id="question-container">
+                <h2 id="question">Question text will appear here</h2>
+                <div id="options">
+                    Options will be dynamically generated
+                </div>
+            </div>
+            <div id="btn-container">
+                <p id="progress">1 / 2 Questions</p>
+                <button id="next-btn" disabled>Next</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div id="sectionThird">
+            <h3 id="message">Congratulations!🎉</h3>
+            <div class="circular-progress" id="circularProgress">
+                <div class="progress-value" id="progressValue">0%</div>
+            </div>
+            <h3 class="score-head">Your Score</h3>
+            <div id="score"></div>
+            <div class="result-message"></div>
+            <button class="back-btn" id="backToHomeBtn">Back to Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
